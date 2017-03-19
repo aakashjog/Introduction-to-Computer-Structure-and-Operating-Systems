@@ -1,0 +1,7 @@
+compile_pdf:
+    image: tianon/latex
+    script:
+        - cd Notes; latexmk -pdf Notes.tex
+    artifacts:
+        paths:
+            - Notes/Notes.pdf
